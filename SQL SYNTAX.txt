@@ -1,0 +1,163 @@
+                                               MY SQL
+SYNTAX :
+
+CREATE DATABASE : 
+
+CREATE DATABASE Database_Name;
+
+CREATE TABLE :
+
+Create table table_name
+(
+	Field 1 Data_type (LIMIT) NOT NULL / Primary key / AUTO_INCREMENT ,
+	Field 2 Data_type (LIMIT),
+	Field 3 Data_type (LIMIT) 
+);
+
+CREATE TABLE tablename(
+attributename1 datatype constraint,
+attributename2 datatype constraint,
+attributenameN datatype constraint);
+
+CREATE_DEFAULT :
+ Create table table_name
+(
+	name varchar(30) DEFAULT 'statement',
+	age INT DEFAULT 99
+);
+
+USE DATABASE_NAME; 
+
+INSERT :
+
+Insert Into Table_Name 
+( Column1 , Column2 , Column3 , Column4 ,Column n )
+Values
+( Value ," Value 2 "," Value 3 "," Value4 " , "Value 5");
+
+DROP DATABASE :
+
+DROP DATABASE Database_name;
+
+DROP TABLE :
+
+DROP DATABASE Table_name;
+
+READ : 
+
+SELECT * FROM TABLE_NAME | ---> * = All Column
+
+ORDER BY :
+
+SELECT * FROM Table_name
+ORDER BY column_name ;  ---> Make In Ascending order 
+
+SELECT * FROM Table_name
+ORDER BY column_name DESC ;  ---> Make In Descending order
+
+LIMIT :
+
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+LIMIT number;
+
+SELECT City
+FROM Customers
+WHERE city Like "m%"
+limit 5;
+
+WHERE :
+
+SELECT * FROM table_name WHERE condition
+
+ALIASES :
+
+SELECT column_name AS alias_name
+FROM table_name;
+
+SELECT column_name(s)
+FROM table_name AS alias_name;
+
+SELECT column_name AS 'Name' FROM Table_name;
+
+UPDATE :
+
+UPDATE table_name
+SET column_name = condition
+Where condition;
+
+DELETE :
+
+DELETE FROM table_name WHERE condition ;
+
+LIMIT :
+
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+LIMIT number;
+
+SELECT * FROM Customers
+LIMIT 3;
+
+MIN :
+
+SELECT MIN(column_name)
+FROM table_name
+WHERE condition;
+
+MAX :
+
+SELECT MAX(column_name)
+FROM table_name
+WHERE condition;
+
+LIKE :
+
+SELECT column1, column2, ...
+FROM table_name
+WHERE columnN LIKE pattern;
+
+IN :
+
+SELECT column_name(s)
+FROM table_name
+WHERE column_name IN (SELECT STATEMENT);
+
+BETWEEN :
+
+SELECT column_name(s)
+FROM table_name
+WHERE column_name BETWEEN value1 AND value2; 
+
+DISTINCT :(REMOVE DUPLICATES)
+
+SELECT DISTINCT column_name(s) FROM table_name;
+
+COUNT :
+
+SELECT COUNT(column_name)
+FROM table_name
+WHERE condition;
+
+AVG : 
+
+SELECT AVG(column_name)
+FROM table_name
+WHERE condition;
+
+SUM :
+
+SELECT SUM(column_name)
+FROM table_name
+WHERE condition;
+
+UPDATE table_name
+SET column_name = REPLACE(column_name, '-', '--')
+
+ANY : 
+
+SELECT *
+FROM table_name
+WHERE column_name > ANY (SELECT column_name FROM another_table);

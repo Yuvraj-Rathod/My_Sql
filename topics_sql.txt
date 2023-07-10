@@ -1,0 +1,65 @@
+Introduction to Databases
+
+What is a database?
+Relational database management systems (RDBMS)
+Overview of SQL
+Basic SQL Queries
+
+SELECT statement
+Filtering data with WHERE clause
+Sorting data with ORDER BY clause
+Limiting results with LIMIT clause
+Working with NULL values
+Data Manipulation
+
+INSERT statement
+UPDATE statement
+DELETE statement
+Advanced Queries
+
+Joins (INNER JOIN, LEFT JOIN, RIGHT JOIN)
+Subqueries
+Aggregation functions (SUM, COUNT, AVG, etc.)
+GROUP BY clause
+HAVING clause
+Database Design
+
+Entity-Relationship (ER) modeling
+Normalization (1NF, 2NF, 3NF)
+Creating tables
+Primary and foreign keys
+Indexes
+Data Definition Language (DDL)
+
+CREATE TABLE statement
+ALTER TABLE statement
+DROP TABLE statement
+Data Control Language (DCL)
+
+GRANT statement
+REVOKE statement
+Views and Indexes
+
+Creating and managing views
+Creating and managing indexes
+Performance considerations
+Stored Procedures and Functions
+
+Creating stored procedures
+Executing stored procedures
+User-defined functions
+Transactions and Concurrency Control
+
+ACID properties
+Transaction management (BEGIN, COMMIT, ROLLBACK)
+Isolation levels
+Data Import and Export
+
+Importing data from files
+Exporting data to files
+Backup and restore strategies
+Advanced Topics (Optional)
+
+Triggers
+Cursors
+User management and security
